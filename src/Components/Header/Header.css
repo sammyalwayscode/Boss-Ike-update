@@ -1,0 +1,82 @@
+body {
+    background-color: orange;
+}
+
+.mainHeader {
+    background-color: #123456;
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerHold {
+    /* background-color: yellowgreen; */
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.NavDivs {
+    /* background-color: aqua; */
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 350ms;
+}
+
+.Navigation:hover {
+    color: skyblue;
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+.Navigation span{
+    margin-left: 6px;
+    font-weight: 700;
+}
+
+.LogoDiv {
+    color:skyblue;
+    font-family: jokerman;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.burgerIconHold {
+    display: none;
+}
+
+.burgerContentHold {
+    display: none;
+}
+
+@media screen and (max-width: 678px) { 
+    .burgerIconHold {
+    display: block; 
+}
+
+ .NavDivs {
+    display: none;
+} 
+
+.burgerContentHold {
+    display: block;
+}
+    
+}
+
+
+
